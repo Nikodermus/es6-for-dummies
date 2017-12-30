@@ -2,7 +2,7 @@
 	Nicolas M. Pardo
 	ES6 for Dummies
 */
-/*jshint esversion: 6 */
+
 let total_doggo_time;
 window.onload = () => {
 	total_doggo_time = Array.from(document.querySelectorAll('li'))
@@ -14,7 +14,5 @@ window.onload = () => {
 		})
 		.reduce((total, value) => total + value, 0);
 
-	console.log(`Your doggo videos are ${Math.floor(total_doggo_time/60)}min and ${Math.floor(total_doggo_time%60)}sec long`);
-
-
+	console.log(`Your doggo videos are ${Math.floor(total_doggo_time / 60)}min and ${Math.floor(total_doggo_time % 60)}sec long`);
 };

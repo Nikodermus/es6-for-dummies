@@ -3,7 +3,7 @@
 	ES6 for Dummies
 */
 
-/*jshint esversion: 6 */
+
 
 let h2;
 
