@@ -1,0 +1,34 @@
+{
+	"name": "es6_tooling",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "browser-sync start --directory --server --files '*.js, *.css, *.html'",
+		"babel": "babel ./js/main.js --watch --out-file ./js/bundle.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.23.1"
+	},
+	"dependencies": {
+		"babel-cli": "^7.0.0-beta.3",
+		"babel-preset-env": "^7.0.0-beta.3"
+	},
+	"babel": {
+		"presets": [
+			[
+				"env",
+				{
+					"targets": {
+						"browsers": [
+							"ie 6-8",
+							"safari >= 7"
+						]
+					}
+				}
+			]
+		]
+	}
+}

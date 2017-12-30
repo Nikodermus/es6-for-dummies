@@ -1,0 +1,29 @@
+/*!
+	Nicolas M. Pardo
+	ES6 for Dummies
+*/
+
+
+@import 'nib'
+global-reset()
+
+*
+*::after
+*::before
+	box-sizing border-box
+	transform translateZ(0)
+	transition  0.5 all ease
+	&:hover
+	&:active
+	&:focus
+		transition  0.5 all ease
+html
+body
+	height 100%
+	width 100%
+	font-family sans-serif
+	overflow-x hidden
+	max-width 100vw
+img
+	object-fit contain
+	max-width 100%
